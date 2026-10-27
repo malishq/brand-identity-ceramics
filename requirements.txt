@@ -1,0 +1,5 @@
+playwright==1.60.0
+pillow==11.3.0
+pypdf==6.21.2
+numpy
+fonttools==4.60.2
