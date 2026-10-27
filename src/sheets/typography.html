@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Обжиг — типографика</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;1,300&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../tokens.css">
+<style>
+body { width: 1800px; height: 1250px; overflow: hidden; position: relative; }
+.head { position: absolute; left: 100px; right: 100px; top: 96px; display: flex; justify-content: space-between; align-items: baseline; }
+.head .t { font-family: var(--serif); font-weight: 300; font-size: 72px; letter-spacing: -0.02em; line-height: 1; }
+.head .s { font-size: 20px; opacity: .62; }
+.spec { position: absolute; left: 100px; top: 232px; width: 1000px; }
+.spec .big { font-family: var(--serif); font-weight: 300; font-size: 196px; line-height: .95; letter-spacing: -0.025em; color: var(--glaze); }
+.spec .big em { font-style: italic; color: var(--soot); }
+.spec .alpha { font-family: var(--serif); font-weight: 300; font-size: 37px; line-height: 1.25; margin-top: 36px; letter-spacing: 0.01em; }
+.spec .alpha2 { font-family: var(--sans); font-weight: 400; font-size: 30px; line-height: 1.35; margin-top: 26px; letter-spacing: 0; }
+.spec .who { display: flex; gap: 60px; margin-top: 40px; font-size: 18px; line-height: 1.5; opacity: .72; }
+.spec .who b { display: block; font-weight: 500; opacity: 1; color: var(--soot); }
+.scale { position: absolute; right: 100px; top: 232px; width: 560px; }
+.lvl { display: grid; grid-template-columns: 1fr 150px; align-items: baseline; padding: 20px 0 18px; border-top: 1px solid rgba(22,26,25,.14); }
+.lvl .k { font-size: 15px; opacity: .62; text-align: right; line-height: 1.5; font-variant-numeric: tabular-nums; }
+.h1 { font-family: var(--serif); font-weight: 300; font-size: 84px; line-height: .98; letter-spacing: -0.02em; }
+.h2 { font-family: var(--serif); font-weight: 300; font-size: 48px; line-height: 1.05; letter-spacing: -0.015em; }
+.lead { font-family: var(--serif); font-weight: 300; font-style: italic; font-size: 30px; line-height: 1.3; }
+.body { font-family: var(--sans); font-size: 19px; line-height: 1.55; }
+.cap { font-family: var(--sans); font-weight: 500; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; }
+.numx { font-family: var(--serif); font-weight: 300; font-size: 84px; line-height: .9; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+.numx small { font-family: var(--sans); font-weight: 500; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; margin-left: 14px; opacity: .62; }
+.rules { position: absolute; left: 100px; right: 100px; bottom: 96px; display: flex; gap: 60px; font-size: 18px; line-height: 1.5; opacity: .72; }
+.rules div { flex: 1; }
+.rules b { font-weight: 500; }
+</style>
+</head>
+<body class="speckle-light">
+  <div class="head">
+    <div class="t">Типографика</div>
+    <div class="s">Spectral для крупного и чисел, Golos Text для всего остального</div>
+  </div>
+  <div class="spec">
+    <div class="big">Обжиг <em>Аа</em></div>
+    <div class="alpha">АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ 0123456789<br>абвгдеёжзийклмнопрстуфхцчшщъыьэюя · 1222° · 28 000 ₽ · № 14 · «ёлочки» — тире</div>
+    <div class="alpha2">АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ абвгдеёжзийклмнопрстуфхцчшщъыьэюя<br>0123456789 · +7 495 128-30-12 · 12:00 — 18:00 · 1222°</div>
+    <div class="who">
+      <div><b>Spectral · Light 300, Light Italic, Regular 400</b>Production Type для Google, SIL OFL 1.1. Заголовки, числа, слово «Обжиг»</div>
+      <div><b>Golos Text · Regular 400, Medium 500</b>Paratype, SIL OFL 1.1. Текст, подписи, интерфейс, табличные цифры</div>
+    </div>
+  </div>
+  <div class="scale">
+    <div class="lvl"><div class="h1">Тихий накал</div><div class="k">H1 · Spectral 300<br>84 / 0.98 · −2%</div></div>
+    <div class="lvl"><div class="h2">Гончарный круг для взрослых</div><div class="k">H2 · Spectral 300<br>48 / 1.05 · −1,5%</div></div>
+    <div class="lvl"><div class="lead">Курс из восьми занятий, группа до шести человек</div><div class="k">Лид · Spectral Italic<br>30 / 1.3</div></div>
+    <div class="lvl"><div class="body">Глина, глазури и два обжига входят в стоимость. После курса можно приходить на свободную практику по пятницам.</div><div class="k">Текст · Golos 400<br>19 / 1.55</div></div>
+    <div class="lvl"><div class="cap">Партия № 14 · ноябрь</div><div class="k">Подпись · Golos 500<br>13 · +10% · капитель</div></div>
+    <div class="lvl"><div class="numx">1222<small>градуса</small></div><div class="k">Число · Spectral 300<br>84 / 0.9 · −3%</div></div>
+  </div>
+  <div class="rules">
+    <div><b>Воздух.</b> Заголовок всегда один на макете, вокруг него больше пустого места, чем занятого.</div>
+    <div><b>Кавычки и тире.</b> «Ёлочки», длинное тире — с пробелами, короткое — в диапазонах: 12:00–18:00.</div>
+    <div><b>Числа.</b> Крупные числа набираются Spectral, подписи к ним — капителью Golos на расстоянии.</div>
+  </div>
+</body>
+</html>
