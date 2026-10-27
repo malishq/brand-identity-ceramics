@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Обжиг — приглашение в мастерскую</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;1,300&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../tokens.css">
+<link rel="stylesheet" href="social.css">
+<style>
+.post { background: var(--soot); color: var(--chamotte); }
+.hole { position: absolute; left: 50%; top: 50%; width: 600px; height: 600px; transform: translate(-50%, -44%); border-radius: 50%; background: var(--glaze); }
+.hole::before { content: ""; position: absolute; inset: 0; border-radius: 50%; border: 1.5px solid rgba(228,223,214,.22); transform: scale(1.1); }
+.hole::after { content: ""; position: absolute; inset: 0; border-radius: 50%; border: 1.5px solid rgba(228,223,214,.1); transform: scale(1.22); }
+.glow { position: absolute; left: 50%; top: 50%; width: 400px; height: 400px; transform: translate(-50%, -50%); border-radius: 50%; background: radial-gradient(circle, rgba(228,87,46,.55) 0%, rgba(228,87,46,.18) 32%, rgba(228,87,46,0) 70%); }
+.ember { position: absolute; left: 50%; top: 50%; width: 36px; height: 36px; transform: translate(-50%, -50%); border-radius: 50%; background: var(--heat); }
+.title { position: absolute; left: 80px; top: 196px; font-size: 84px; max-width: 860px; }
+.title em { font-style: italic; color: var(--sand); }
+.when { position: absolute; left: 80px; right: 80px; bottom: 190px; display: flex; justify-content: space-between; align-items: flex-end; }
+.when .v { font-size: 72px; }
+.when .k { font-size: 22px; margin-top: 14px; color: var(--sand); }
+.when .r { text-align: right; font-size: 28px; line-height: 1.45; }
+</style>
+</head>
+<body>
+<div class="post speckle-dark">
+  <div class="hole"><div class="glow"></div><div class="ember"></div></div>
+  <div class="head">
+    <img src="../../logo/logo-inverse.svg" alt="Обжиг">
+    <div class="tag label muted">Открытая мастерская</div>
+  </div>
+  <div class="title h1">Приходите посмотреть, <em>как это делается</em></div>
+  <div class="when">
+    <div><div class="v num">сб · 12:00 — 18:00</div><div class="k label">каждую субботу, вход свободный</div></div>
+    <div class="r muted">Бауманская, 11, стр. 8<br>вход со двора, 2 этаж</div>
+  </div>
+  <div class="foot">
+    <div class="label muted">Чай, глина, печь — покажем всё</div>
+    <div class="label muted">@obzhig_studio</div>
+  </div>
+</div>
+</body>
+</html>

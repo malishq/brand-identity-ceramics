@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Обжиг — как делаем</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;1,300&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../tokens.css">
+<link rel="stylesheet" href="social.css">
+<style>
+.post { background: var(--glaze); color: var(--chamotte); }
+.title { position: absolute; left: 80px; top: 196px; font-size: 76px; }
+.steps { position: absolute; left: 80px; right: 80px; top: 392px; }
+.step { display: grid; grid-template-columns: 1fr 200px; align-items: baseline; padding: 12px 0 11px; border-top: 1px solid rgba(228,223,214,.16); font-size: 27px; }
+.step .v { text-align: right; font-size: 40px; font-variant-numeric: tabular-nums; }
+.step .v small { font-family: var(--sans); font-size: 22px; letter-spacing: .06em; opacity: .62; margin-left: 8px; }
+.chart { position: absolute; left: 80px; right: 80px; bottom: 196px; height: 270px; }
+.chart svg { width: 100%; height: 100%; overflow: visible; }
+.chart .lbl { position: absolute; font-size: 21px; letter-spacing: .1em; text-transform: uppercase; font-weight: 500; color: var(--sand); white-space: nowrap; }
+</style>
+</head>
+<body>
+<div class="post speckle-dark">
+  <div class="head">
+    <img src="../../logo/logo-inverse.svg" alt="Обжиг">
+    <div class="tag label muted">Как делаем</div>
+  </div>
+  <div class="title h1">От комка глины до&nbsp;чашки — десять дней</div>
+  <div class="steps">
+    <div class="step"><div>Круг: тянем форму</div><div class="v num">20<small>мин</small></div></div>
+    <div class="step"><div>Сушка, потом подрезка донышка</div><div class="v num">7<small>дней</small></div></div>
+    <div class="step"><div>Утильный обжиг</div><div class="v num">900<small>°</small></div></div>
+    <div class="step"><div>Глазурь в три слоя, кистью</div><div class="v num">1<small>час</small></div></div>
+    <div class="step"><div>Обжиг на конус 6</div><div class="v num">1222<small>°</small></div></div>
+    <div class="step"><div>Остывание печи</div><div class="v num">24<small>часа</small></div></div>
+  </div>
+  <div class="chart">
+    <div class="lbl" style="left:0;top:-40px">Кривая обжига</div>
+    <div class="lbl" style="left:calc(30.9% + 28px);top:-14px;color:var(--chamotte)">1222° · выдержка 15 мин</div>
+    <div class="lbl" style="left:calc(16.7% - 90px);top:calc(51.7% + 12px)">600°</div>
+    <div class="lbl" style="right:0;bottom:-34px">36 ч</div>
+    <div class="lbl" style="left:0;bottom:-34px">0 ч</div>
+    <svg viewBox="0 0 1000 400" preserveAspectRatio="none" fill="none">
+      <path d="M0,400 L1000,400" stroke="#E4DFD6" stroke-opacity=".25" stroke-width="1" vector-effect="non-scaling-stroke"/>
+      <path d="M0.0,400.0 L55.6,340.1 L69.4,340.1 L166.7,207.0 L277.8,40.6 L305.6,0.0 L312.5,0.0 C316.0,4.0 320.6,8.9 333.3,24.0 C346.1,39.0 361.1,61.1 388.9,90.5 C416.7,119.9 453.7,165.9 500.0,200.3 C546.3,234.7 611.1,270.8 666.7,296.8 C722.2,322.9 777.8,340.7 833.3,356.7 C888.9,372.8 972.2,387.2 1000.0,393.3" stroke="#E4DFD6" stroke-width="2.5" vector-effect="non-scaling-stroke"/>
+      <path d="M166.7,207 L166.7,400" stroke="#E4DFD6" stroke-opacity=".3" stroke-width="1" stroke-dasharray="4 6" vector-effect="non-scaling-stroke"/>
+    </svg>
+    <svg style="position:absolute;inset:0;width:100%;height:100%;overflow:visible" viewBox="0 0 1000 400" preserveAspectRatio="none">
+      <circle cx="309" cy="0" r="9" fill="#E4572E"/>
+    </svg>
+  </div>
+  <div class="foot">
+    <div class="label muted">Каменная масса · глазури без свинца</div>
+    <div class="label muted">@obzhig_studio</div>
+  </div>
+</div>
+</body>
+</html>

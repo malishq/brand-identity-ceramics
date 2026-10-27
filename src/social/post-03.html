@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Обжиг — расписание недели</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;1,300&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../tokens.css">
+<link rel="stylesheet" href="social.css">
+<style>
+.post { background: var(--soot); color: var(--chamotte); }
+.title { position: absolute; left: 80px; top: 196px; font-size: 76px; }
+.title span { color: var(--sand); }
+.rows { position: absolute; left: 80px; right: 80px; top: 350px; }
+.row { display: grid; grid-template-columns: 70px 150px 1fr; align-items: baseline; padding: 24px 0 22px; border-top: 1px solid rgba(228,223,214,.16); }
+.row .d { font-size: 22px; color: var(--sand); }
+.row .t { font-size: 46px; }
+.row .c { font-size: 28px; line-height: 1.35; }
+.row .c small { display: block; font-size: 22px; opacity: .62; margin-top: 4px; }
+.row.fire .t { color: var(--heat); }
+.row.fire .c { color: var(--chamotte); }
+.row .dot { width: 14px; height: 14px; margin-right: 14px; vertical-align: 2px; }
+</style>
+</head>
+<body>
+<div class="post speckle-dark">
+  <div class="head">
+    <img src="../../logo/logo-inverse.svg" alt="Обжиг">
+    <div class="tag label muted">Расписание</div>
+  </div>
+  <div class="title h1">Неделя <span>10 — 16 ноября</span></div>
+  <div class="rows">
+    <div class="row"><div class="d label">пн</div><div class="t num">19:00</div><div class="c">Круг. Основы<small>третье занятие группы</small></div></div>
+    <div class="row"><div class="d label">вт</div><div class="t num">19:00</div><div class="c">Глазурование<small>открытая группа, 4 места</small></div></div>
+    <div class="row fire"><div class="d label">ср</div><div class="t num">—</div><div class="c"><span class="dot"></span>Обжиг, печь закрыта<small>студия не работает, забираем работы в четверг</small></div></div>
+    <div class="row"><div class="d label">чт</div><div class="t num">19:00</div><div class="c">Круг. Основы<small>четвёртое занятие группы</small></div></div>
+    <div class="row"><div class="d label">пт</div><div class="t num">18:00</div><div class="c">Свободная практика<small>для тех, кто прошёл курс</small></div></div>
+    <div class="row"><div class="d label">сб</div><div class="t num">12:00</div><div class="c">Открытая мастерская<small>до 18:00, вход свободный</small></div></div>
+    <div class="row"><div class="d label">вс</div><div class="t num">12:00</div><div class="c">Пробное занятие<small>3 часа, 2 места</small></div></div>
+  </div>
+  <div class="foot">
+    <div class="label muted">Запись в сообщениях</div>
+    <div class="label muted">@obzhig_studio</div>
+  </div>
+</div>
+</body>
+</html>

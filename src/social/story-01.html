@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Обжиг — сторис: набор на курс</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;1,300&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../tokens.css">
+<link rel="stylesheet" href="social.css">
+<style>
+.story { background: var(--glaze); color: var(--chamotte); }
+.rings { position: absolute; left: 50%; top: 50%; width: 1500px; height: 1500px; transform: translate(-50%, -42%); }
+.rings circle { fill: none; stroke: var(--chamotte); stroke-width: 1.5; opacity: .26; }
+.rings .pin { fill: var(--heat); stroke: none; opacity: 1; }
+.title { position: absolute; left: 80px; top: 330px; font-size: 112px; }
+.title em { font-style: italic; color: var(--sand); }
+.date { position: absolute; left: 80px; top: 1180px; }
+.date .v { font-size: 230px; }
+.date .k { font-size: 26px; color: var(--sand); margin-top: 20px; }
+.cta { position: absolute; left: 80px; bottom: 300px; }
+.cta .pill { background: var(--chamotte); color: var(--glaze); }
+</style>
+</head>
+<body>
+<div class="story speckle-dark">
+  <svg class="rings" viewBox="0 0 1500 1500">
+    <circle cx="750" cy="750" r="90"/><circle cx="750" cy="750" r="160"/><circle cx="750" cy="750" r="230"/><circle cx="750" cy="750" r="300"/><circle cx="750" cy="750" r="370"/><circle cx="750" cy="750" r="440"/><circle cx="750" cy="750" r="510"/><circle cx="750" cy="750" r="580"/><circle cx="750" cy="750" r="650"/><circle cx="750" cy="750" r="720"/>
+    <circle class="pin" cx="750" cy="750" r="12"/>
+  </svg>
+  <div class="head">
+    <img src="../../logo/logo-inverse.svg" alt="Обжиг">
+    <div class="tag label muted">Набор открыт</div>
+  </div>
+  <div class="title h1">Гончарный круг.<br><em>Курс для взрослых,<br>шесть мест</em></div>
+  <div class="date"><div class="v num">12.11</div><div class="k label">старт группы, по понедельникам и четвергам</div></div>
+  <div class="cta"><span class="pill">Записаться</span></div>
+  <div class="foot">
+    <div class="label muted">Бауманская, 11, стр. 8</div>
+    <div class="label muted">@obzhig_studio</div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Обжиг — новая партия</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;1,300&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../tokens.css">
+<link rel="stylesheet" href="social.css">
+<style>
+.post { background: var(--chamotte); color: var(--soot); }
+.big { position: absolute; left: 66px; top: 226px; font-size: 400px; color: var(--glaze); }
+.big-k { position: absolute; left: 492px; top: 468px; font-size: 48px; line-height: 1.15; font-family: var(--serif); font-weight: 300; font-style: italic; color: var(--soot); }
+.grid { position: absolute; left: 80px; right: 80px; bottom: 330px; display: grid; grid-template-columns: repeat(9, 1fr); gap: 22px; }
+.grid i { display: block; aspect-ratio: 1; border-radius: 50%; background: var(--glaze); position: relative; }
+.grid i::after { content: ""; position: absolute; inset: 24%; border-radius: 50%; border: 1.5px solid rgba(228,223,214,.28); }
+.grid i.sand { background: var(--sand); }
+.grid i.sand::after { border-color: rgba(22,26,25,.18); }
+.grid i.heat { background: var(--heat); }
+.grid i.heat::after { border-color: rgba(255,255,255,.3); }
+.desc { position: absolute; left: 80px; right: 80px; bottom: 196px; display: flex; justify-content: space-between; align-items: flex-end; font-size: 26px; line-height: 1.45; }
+.desc .r { text-align: right; }
+</style>
+</head>
+<body>
+<div class="post speckle-light">
+  <div class="head">
+    <img src="../../logo/logo.svg" alt="Обжиг">
+    <div class="tag label muted">Партия № 14 · ноябрь</div>
+  </div>
+  <div class="big num">36</div>
+  <div class="big-k">предметов<br>из новой партии</div>
+  <div class="grid">
+    <i></i><i></i><i></i><i></i><i class="sand"></i><i></i><i></i><i></i><i></i>
+    <i></i><i></i><i class="sand"></i><i></i><i></i><i></i><i></i><i></i><i></i>
+    <i></i><i></i><i></i><i></i><i></i><i></i><i class="sand"></i><i></i><i></i>
+    <i></i><i class="heat"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+  </div>
+  <div class="desc">
+    <div>чашки, пиалы, тарелки<br>каменная масса, глазурь «Еловая»</div>
+    <div class="r muted">обжиг 1222°<br>в продаже с субботы</div>
+  </div>
+  <div class="foot">
+    <div class="label muted">Бауманская, 11, стр. 8</div>
+    <div class="label muted">@obzhig_studio</div>
+  </div>
+</div>
+</body>
+</html>
