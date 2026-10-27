@@ -10,8 +10,8 @@
 <link rel="stylesheet" href="social.css">
 <style>
 .story { background: var(--soot); color: var(--chamotte); }
-.glow { position: absolute; left: 50%; top: 50%; width: 900px; height: 900px; transform: translate(-50%, -50%); border-radius: 50%; background: radial-gradient(circle, rgba(228,87,46,.5) 0%, rgba(228,87,46,.14) 34%, rgba(228,87,46,0) 70%); }
-.ember { position: absolute; left: 50%; top: 50%; width: 44px; height: 44px; transform: translate(-50%, -50%); border-radius: 50%; background: var(--heat); }
+.glow { position: absolute; left: 693px; top: 983px; width: 900px; height: 900px; transform: translate(-50%, -50%); border-radius: 50%; background: radial-gradient(circle, rgba(228,87,46,.5) 0%, rgba(228,87,46,.14) 34%, rgba(228,87,46,0) 70%); }
+.ember { position: absolute; left: 693px; top: 983px; width: 40px; height: 40px; transform: translate(-50%, -50%); border-radius: 50%; background: var(--heat); }
 .title { position: absolute; left: 80px; top: 330px; font-size: 120px; }
 .title em { font-style: italic; color: var(--sand); }
 .temp { position: absolute; left: 80px; bottom: 470px; }
@@ -21,11 +21,12 @@
 .cta .pill { background: var(--heat); color: var(--chamotte); }
 .chart { position: absolute; left: 80px; right: 80px; top: 760px; height: 300px; }
 .chart svg { width: 100%; height: 100%; overflow: visible; }
+.now { position: absolute; left: 725px; top: 962px; font-size: 22px; color: var(--sand); }
 </style>
 </head>
 <body>
 <div class="story speckle-dark">
-  <div class="glow"></div><div class="ember"></div>
+  <div class="glow"></div>
   <div class="head">
     <img src="../../logo/logo-inverse.svg" alt="Обжиг">
     <div class="tag label muted">Партия № 14</div>
@@ -36,6 +37,8 @@
       <path d="M0.0,400.0 L55.6,340.1 L69.4,340.1 L166.7,207.0 L277.8,40.6 L305.6,0.0 L312.5,0.0 C316.0,4.0 320.6,8.9 333.3,24.0 C346.1,39.0 361.1,61.1 388.9,90.5 C416.7,119.9 453.7,165.9 500.0,200.3 C546.3,234.7 611.1,270.8 666.7,296.8 C722.2,322.9 777.8,340.7 833.3,356.7 C888.9,372.8 972.2,387.2 1000.0,393.3" stroke="#E4DFD6" stroke-opacity=".5" stroke-width="2" vector-effect="non-scaling-stroke"/>
     </svg>
   </div>
+  <div class="ember"></div>
+  <div class="now label">330° · 24-й час</div>
   <div class="temp"><div class="v num">36</div><div class="k label">предметов · чашки, пиалы, тарелки</div></div>
   <div class="cta"><span class="pill">Посмотреть партию</span></div>
   <div class="foot">

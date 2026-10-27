@@ -83,7 +83,7 @@ p { margin: 0 0 14px; max-width: 62ch; }
 .pal-notes b { font-weight: 500; }
 .spec .big { font-family: var(--serif); font-weight: 300; font-size: clamp(64px, 9vw, 150px); line-height: .95; letter-spacing: -0.025em; color: var(--glaze); }
 .spec .big em { color: var(--soot); }
-.spec .alpha { font-family: var(--serif); font-weight: 300; font-size: clamp(15px, 1.55vw, 23px); line-height: 1.35; margin-top: 22px; white-space: nowrap; }
+.spec .alpha { font-family: var(--serif); font-weight: 300; font-size: clamp(14px, 1.55vw, 23px); line-height: 1.35; margin-top: 22px; white-space: nowrap; }
 .spec .alpha2 { font-size: clamp(12px, 1.15vw, 16px); margin-top: 14px; white-space: nowrap; }
 .lvl { display: grid; grid-template-columns: 1fr 120px; gap: 16px; align-items: baseline; padding: 14px 0 12px; border-top: 1px solid rgba(22,26,25,.14); }
 .lvl .k { font-size: 12px; opacity: .62; text-align: right; line-height: 1.5; font-variant-numeric: tabular-nums; }
@@ -111,7 +111,9 @@ p { margin: 0 0 14px; max-width: 62ch; }
 footer { padding: 32px var(--pad) 48px; font-size: 14px; display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
 .speck { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cg fill='%23161A19' fill-opacity='0.11'%3E%3Ccircle cx='32' cy='18' r='1.1'/%3E%3Ccircle cx='121' cy='44' r='0.9'/%3E%3Ccircle cx='208' cy='22' r='1.4'/%3E%3Ccircle cx='66' cy='83' r='0.7'/%3E%3Ccircle cx='172' cy='97' r='1.8'/%3E%3Ccircle cx='21' cy='131' r='1.1'/%3E%3Ccircle cx='110' cy='149' r='0.9'/%3E%3Ccircle cx='227' cy='160' r='0.7'/%3E%3Ccircle cx='56' cy='199' r='1.4'/%3E%3Ccircle cx='151' cy='214' r='1.1'/%3E%3Ccircle cx='196' cy='228' r='0.9'/%3E%3Ccircle cx='90' cy='40' r='1.8'/%3E%3Ccircle cx='240' cy='110' r='0.9'/%3E%3Ccircle cx='8' cy='70' r='0.7'/%3E%3C/g%3E%3C/svg%3E"); background-size: 240px 240px; }
 @media (max-width: 720px) {
-  .tiles { grid-template-columns: 1fr 1fr; grid-auto-rows: 150px; height: auto; }
+  .spec .alpha, .spec .alpha2 { white-space: normal; overflow-wrap: anywhere; }
+  .tiles { grid-template-columns: 1fr 1fr; grid-auto-rows: auto; height: auto; }
+  .tile { min-height: 170px; padding-top: 44px; }
   .t-heat .n { writing-mode: horizontal-tb; transform: none; align-self: flex-start; }
   .t-heat { padding: 18px; }
   .nav ul { display: none; }
